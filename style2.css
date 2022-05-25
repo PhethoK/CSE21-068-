@@ -1,0 +1,304 @@
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/* Styling the home page*/
+.wrapper{
+    width:auto;
+    height: fit-content;   
+}
+nav .masterhome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.master img{
+    max-height: 100%;
+    max-width: 300px;
+    float: left;  
+}
+.navmenue ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.navmenue li{
+    list-style: none;
+}
+.navmeue li a{
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.navmenue li:hover{
+    background-color:grey ;
+}
+/*h1{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+}
+h2{ 
+color:black;
+font-size:18px;
+font-family: Arial, Helvetica, sans-serif;
+font-style: italic;
+display:block;
+padding: 10px;
+}*/
+/*body*/
+*{
+    box-sizing: border-box;
+}
+.title img{
+    max-height: 100%;
+    max-width: 300px;
+    float: left;
+}
+
+.cathead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.catnav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+.catnav li{
+    list-style: none;
+}
+.catnav li a{
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.catnav li:hover{
+    background-color:grey ;
+}
+.cathead  .title img{
+    max-height: 100%;
+    max-width: 300px;
+    float: left; 
+}
+/*@media screen and (max-width:600px){
+    .catnav{
+        width: 100%;
+    }
+    .cathead{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .catnav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+}*/
+.cartmovie{
+    width: auto;
+}
+.columnC{
+    float: left;
+    width: auto;
+    padding: 5px;
+}
+.columnC img{
+    height: 250px;
+    width: 250px;
+}
+
+/*clearfix for clearfloats*/
+.movierow2::after{
+    content: "";
+  clear: both;
+  display: table;
+}
+
+/*action things*/
+
+.desc {
+    font-family: Arial, Helvetica, sans-serif;
+    color: chocolate;
+    font-size: 19px;
+}
+
+.moviecontain{
+    width: auto;
+}
+.columnA{
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+.columnA img{
+    height: 250px;
+    width: 250px;
+}
+
+/*clearfix for clearfloats*/
+.movierowA::after{
+ content: "";
+  clear: both;
+  display: table;
+}
+/*contact style*/
+.contactcontain{
+    width: auto;
+}
+.mainheader{
+    height: 100px;
+    padding: 10px;
+}
+.mainheader img{
+    max-height: 100%;
+    max-width: 300px;
+    float: left;
+}
+
+.sidebar{
+    position: relative;
+    width: 30%;
+    padding-top: 40px;
+    text-align: center;
+    margin: 1px;
+    min-height: 500px;
+    top: 0;
+    left: 0;
+    float: right;
+    font-size: 15px;
+}
+
+.contentcont{
+    margin-right: 150px;
+    padding:10px;
+    width:70%;
+    font-size: 18px;
+    height: fit-content;
+    background-color: gray
+}
+.contentcont .row .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+.column img:hover{
+   opacity: 1;
+}
+  
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .contentcont .row .column {
+      width: 100%;
+    }
+  }
+.footercont{
+    clear: both;
+    background-color: gray;
+    color:black;
+    text-align: center;
+    height: 130px;
+    padding: 1px;
+    margin: 0px;
+
+}
+.outerfooter{
+    height: 150px;
+    padding: 5px;
+}
+.main-outer-footer{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    
+}
+
+.quick-links ul{
+    display:inline-flex;
+}
+.quick-links ul li{
+    list-style: none;
+   
+}
+.quick-links li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens 
+  } set condition based on width of phone or laptop
+  link to responsive style sheet
+  padding is in between*/
+
+  /* ComingSoon page*/
+.comcontain {
+   width: auto;
+   
+}
+
+.movierow::after{
+    content: "";
+    clear: both;
+    display: table;
+ }
+.column1 {
+    float: left;
+  width: 25%;
+  padding: 5px;
+}
+.column1 img{
+    height: 250px;
+    width: 250px;
+}
+
+/*booking form*/
+
+.bookingform{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+.bookingform h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    color: navy;
+}
+.bookingform p{
+ 
+ font-weight: bold;
+}
+
+.bookingform button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    margin: 12px;
+    width: 50%;
+}
+.bookingform button:hover{
+    color: red;
+}
+
+
+
+  

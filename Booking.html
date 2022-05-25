@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Booking a movie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <style>
+
+    </style>
+</head>
+   <body>
+      <div class="bookingform">
+         <form action="Booking.html" method="post">
+            
+               <h1>Movie Booking Form</h1>
+               <div>
+                  <label>Name and Surname</label>
+               <input type="text" name="name&surname" placeholder="Full Names" required>
+               </div>
+              <br>
+               <div>
+                  <label>Movie name</label>
+               <input type="text" name="movie name" placeholder="name of movie" required>
+               </div>
+               <br>
+               <div>
+                  <label>Cellphone Number</label>
+                  <input type="tel" name="number" minlength="8" required>
+               </div>
+               <br>
+               <div>
+                  <label>Number of people</label>
+                  <input type="number" min="1" max="60" step="1" required>
+               </div>
+               <br>
+               <div>
+                  <label>Day of movie</label>
+                  <input type="date" name="date">
+               </div>
+               <br>
+               <div>
+                  <p>Time Slot;</p>
+                  <div>
+                     <label>11am</label>
+                     <input type="radio" name="time" value="11am">
+                  </div>
+                  <div>
+                     <label>2pm</label>
+                     <input type="radio" name="time" value="2pm">
+                  </div>
+                  <div>
+                     <label>5pm</label>
+                     <input type="radio" name="time" value="5pm">
+                  </div>
+                  <div>
+                     <label>8pm</label>
+                     <input type="radio" name="time" value="8pm">
+                  </div>
+   
+               </div>
+               <div>
+                  <p>Ticket Price</p>
+                  <div>
+                     <label>Standard P70</label>
+                     <input type="radio" name="ticket" value="Standard">
+                  </div>
+                  <div>
+                     <label>Premium P100</label>
+                     <input type="radio" name="ticket" value="Premium">
+                  </div>
+   
+               </div>
+               <div>
+                 <p> Select Cinema </p>
+                  <div>
+                     <label>Gaborone</label>
+                     <input type="radio" name="cinema" value="Gaborone">
+                  </div>
+                  <div>
+                     <label>Francistown</label>
+                     <input type="radio" name="cinema" value="Francistown">
+                  </div>
+   
+               </div>
+               <button type="submit">Submit</button> 
+         </form>
+      </div>
+   </body>
+</html>

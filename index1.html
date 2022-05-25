@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home Page | Movie Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <style>
+.mySlides img {vertical-align: middle;}
+body{
+  background-image:url(reg\ back\ image.jpg) ;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 990px;
+  position: relative;
+  margin: auto;
+  height: 600px;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+    </style>
+</head>
+  <body>
+    <div class="wrapper">
+    <nav class="masterhome">
+      <div class="master">
+        <img src="logo1.png" alt="logo"></div>
+      <div class="navmenue">
+          <ul>
+         <li><a href="Booking.html">Booking</a></li>
+         <li><a href="Services.html">ComingSoon</a></li>
+         <li><a href="Contact.html">Contact</a></li>
+         <li><a href="catergories.html">catergories</a></li>
+         </ul>
+      </div>
+    </nav>
+    </div>
+    
+    
+<div class="slideshow-container">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="landscape3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="landscape2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="landscape1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="landscape4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="landscape5.jpg" style="width:100%">
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+</div>
+    
+    
+<footer class="main-footer">
+    
+   <div class="footercont">
+    <div class="outerfooter">
+    <p>CONTACTS</p>
+    <br>
+    <p>Watchertheaters.@onlymfilms.com</p>
+    <p>www.Watchertheaters.com</p>
+    </div>
+    
+    <div class="main-outer-footer">
+        <div class="quick-links">
+          <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li><a href="catergories.html">Movie Cartegories</a></li>
+            <li><a href="Booking.html">Ticket Booking</a></li>
+          </ul>
+        </div>
+  
+      </div>
+</div>
+   </footer>
+   <script>
+     let slideIndex = 0;
+    showSlides();
+
+   function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+   </script>
+    
+   </body>
+</html>
