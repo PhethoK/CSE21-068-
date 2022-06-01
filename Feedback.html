@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Feedback Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <style>
+body{
+   background-image: url(reg\ back\ image.jpg);
+}
+.bookingform h1{
+    font-size: 25px;
+    text-align: center;
+    margin: 20px;
+    color: white;
+}
+label {
+   color: white;
+   font-size: 18px;
+}
+p{
+   color: white;
+}
+.catnav li a{ 
+    color: white;
+}
+    </style>
+</head>
+   <body>
+      <div>
+         <nav class="cathead">
+             <div class="title"><img src="logo1.png" alt="logo"></div> 
+                <div class="catnav">
+                    <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="ComingSoon.html">ComingSoon</a></li>
+                     <li><a href="Contact.html">Contact</a></li>
+                     <li><a href="catergories.html">catergories</a></li>
+                     <li><a href="Booking.html">MovieBooking</a></li>
+                      </ul>
+                </div>
+         </nav>
+       </div>
+       <div class="bookingform">
+        <form action="Feedback.html" method="post">
+           
+              <h1>Give your Feedback</h1>
+              <div>
+                 <label>First Name</label>
+              <input type="text" name="firstname" placeholder="Firstname" required>
+              </div>
+             <br>
+              <div>
+                 <label>Last Name</label>
+              <input type="text" name="Lastname" placeholder="Lastname" required>
+              </div>
+              <br>
+              <div>
+                 <label for="phone">Cellphone Number</label>
+                 <input type="tel" name="number" minlength="8" id="phone"  required>
+              </div>
+              <br>
+              <div>
+                  <label>Email Address</label>
+                  <input type="text" name="emailaddress" placeholder="E-mail" required>
+              </div>
+              <br>
+              <div>
+                  <label>Review</label>
+                  <textarea id="review" name="user comment" rows="10" cols="50" required></textarea>
+              </div>
+              
+              <button type="submit">Submit</button> 
+        </form>
+     </div>
+  
+    </body>
+</html>
