@@ -286,7 +286,28 @@ nav .masterhome{
 .bookingform button:hover{
     color: red;
 }
+@media screen and (max-width: 700px) {
+.bookingform h1 {
+      font-size: 19px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .catnav li a{
+        color: black;
+        padding: 1px;
+        display: block;
+        
+    }
+}
 
+@media screen and (max-width: 900px) {
+.bookingform{
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        width: 300px;
+    }
+  }
 
 
   
